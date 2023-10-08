@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;500;600;700;800;900&family=Poppins:wght@500;600;700&display=swap');
+
+:root {
+  /* Base font size (adjust as needed) */
+  font-size: 16px;
+
+  /* Text Sizes */
+  --text-xs: 0.875rem;
+  /* 14px / 16px = 0.875rem */
+  --text-sm: 1rem;
+  /* 16px / 16px = 1rem */
+  --text-md: 1.125rem;
+  /* 18px / 16px = 1.125rem */
+  --text-lg: 1.25rem;
+  /* 20px / 16px = 1.25rem */
+
+  /* Other variables from your design system */
+  --white-secondary: #FAFBFC;
+  --blue-primary: #3179FF;
+  --blue-secondary: #2673DD;
+  --orange-primary: #FF2310;
+  --text-black: #1F284F;
+  --text-black-secondary: #17181A;
+
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-l: 10px;
+  --radius-round: 50%;
+
+  --font-family-primary: 'Barlow', sans-serif;
+  --font-family-secondary: 'Poppins', sans-serif;
+}
+
+
+/* Flexbox Utilities */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex-reverse-m {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.flex-reverse-col-m{
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* Colors */
+.bg-white-secondary {
+  background-color: var(--white-secondary);
+}
+
+.text-blue-primary {
+  color: var(--blue-primary);
+}
+
+.text-blue-secondary {
+  color: var(--blue-secondary);
+}
+
+.text-black {
+  color: var(--text-black);
+}
+
+.text-black-secondary {
+  color: var(--text-black-secondary);
+}
+
+/* Text Sizes */
+.text-xs {
+  font-size: 0.875rem;
+  /* 14px / 16px = 0.875rem */
+}
+
+.text-sm {
+  font-size: 1rem;
+  /* 16px / 16px = 1rem */
+}
+
+.text-md {
+  font-size: 1.125rem;
+  /* 18px / 16px = 1.125rem */
+}
+
+.text-lg {
+  font-size: 1.25rem;
+  /* 20px / 16px = 1.25rem */
+}
+
+
+/* Border Radii */
+.radius-s {
+  border-radius: var(--radius-s);
+}
+
+.radius-m {
+  border-radius: var(--radius-m);
+}
+
+.radius-l {
+  border-radius: var(--radius-l);
+}
+
+.radius-round {
+  border-radius: var(--radius-round);
+}
+
+/* Font Families */
+.font-primary {
+  font-family: var(--font-family-primary);
+}
+
+.font-secondary {
+  font-family: var(--font-family-secondary);
+}
+
+/* Responsive text sizes for different screen sizes */
+/* Small screens (e.g., mobile devices) */
+@media (max-width: 576px) {
+  .text-xs {
+    font-size: 0.875rem;
+    /* 14px / 16px = 0.875rem */
+  }
+
+  .flex-reverse-m {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+  }
+
+  .submenu:hover .submenu-content {
+    display: none;
+  }
+
+  .justify-endm-m{
+    justify-content: flex-start;
+  }
+}
+
+/* Medium screens (e.g., tablets) */
+@media (min-width: 577px) and (max-width: 992px) {
+  .text-sm {
+    font-size: 1rem;
+    /* 16px / 16px = 1rem */
+  }
+
+  .flex-reverse-m {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+  }
+
+  .flex-reverse-col-m{
+    flex-direction: column-reverse;
+  }
+
+  .submenu:hover .submenu-content {
+    display: none;
+  }
+}
+
+/* Large screens (e.g., desktops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .text-md {
+    font-size: 1.125rem;
+    /* 18px / 16px = 1.125rem */
+  }
+
+}
+
+/* Extra-large screens */
+@media (min-width: 1201px) {
+  .text-lg {
+    font-size: 1.25rem;
+    /* 20px / 16px = 1.25rem */
+  }
+}
+
+/* Hide/Show on Different Screen Sizes */
+.hide-on-sm {
+  display: none;
+}
+
+.hide-on-md {
+  display: none;
+}
+
+.hide-on-lg {
+  display: none;
+}
+
+.hide-on-xl {
+  display: none;
+}
+
+.show-on-sm {
+  display: block;
+}
+
+.show-on-md {
+  display: block;
+}
+
+.show-on-lg {
+  display: block;
+}
+
+.show-on-xl {
+  display: block;
+}
+
+/* Spacing Utilities */
+.m-1 {
+  margin: 1rem;
+}
+
+.mtb-3{
+  margin: 3rem;
+}
+.ms-1 {
+  margin: auto 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.ml-3 {
+  margin-left: 3rem;
+}
+
+/* Padding Utilities */
+.p-1 {
+  padding: 1rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
+.pt-3 {
+  padding-top: 3rem;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
+.pl-3 {
+  padding-left: 3rem;
+}
+
+/* Justify Content Classes */
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+/* Align Items Classes */
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* Text Align Classes */
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+:is(ul, li) {
+  display: flex;
+  gap: .6rem;
+}
+
+/* Button css */
+
+.button {
+  font-size: var(--text-sm);
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--white-secondary);
+  background-color: var(--orange-primary);
+  padding: 2px 5px;
+  transition: all ease-in-out .4s;
+  border-radius: var(--radius-s);
+  padding: .2rem .4rem;
+}
+
+.button:hover{
+  transform: scale(1.1);
+}
+.button.disabled {
+  pointer-events: none;
+  /* Disable button interaction */
+  opacity: 0.7;
+  /* Reduce opacity for disabled button */
+}
+
+/* laoding-animation */
+
+.loading-spinner {
+  width: 30px;
+  height: 30px;
+  margin-top: 50px;
+  border-radius: 50%;
+  background:
+      radial-gradient(farthest-side, #ffa516 94%, #0000) top/6px 6px no-repeat,
+      conic-gradient(#0000 30%, #ffa516);
+  animation: s3 1s infinite linear;
+}
+
+@keyframes s3 {
+  100% {
+      transform: rotate(1turn)
+  }
+}
+
+/* Web page styling */
+main {
+  font-family: var(--font-family-primary);
+}
+
+main section{
+  margin: 4rem 1rem;
+}
+
+
+#navbar{
+  position:sticky;  
+  height: 4rem;
+  top: 0;
+  background-color: var(--white-secondary);
+  border-bottom: .07rem solid #ddd;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+  padding: 0 1rem;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: var(--text-lg);
+}
+
+.logo span {
+  color: var(--orange-primary);
+}
+
+/* Hide submenu by default */
+.submenu-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  /* Set your background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add a box shadow for styling */
+  text-align: center;
+  width: 7rem;
+  padding: 0 2rem 1rem 2rem;
+  transition: all ease-in-out .4s;
+  border-radius: var(--radius-m);
+}
+
+/* Show submenu on hover */
+.submenu:hover .submenu-content {
+  display: block;
+  top: 2.3rem;
+}
+
+/* Style submenu items */
+.submenu-content li {
+  padding: .5rem;
+}
+
+/* Style submenu links */
+.submenu-content a {
+  color: var(--text-black);
+  /* Set your text color */
+  text-decoration: none;
+}
+
+
+/* Basic styles for the menu */
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: var(--text-lg);
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.menu-list a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  font-weight: 400;
+  color: var(--text-black-secondary);
+}
+
+.menu-list a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: .1rem;
+  bottom: 0;
+  left: 0;
+  background-color: var(--blue-secondary);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.menu-list a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+  .flex-reverse-col-m{
+    flex-direction: column-reverse;
+  }
+
+  .submenu:hover .submenu-content {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .menu-list {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: calc(80px + 3rem);
+    height: 100%;
+    background-color: var(--white-secondary);
+    z-index: 1000;
+    overflow-y: auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: left 0.3s ease;
+  }
+
+.menu-button.clicked{
+  color: var(--orange-primary);
+}
+  .menu-button.clicked+.menu-list {
+    left: 0;
+    top: 0;
+  }
+
+  /* Style for menu items */
+  .menu-list ul {
+    padding-left: 0;
+  }
+
+  .menu-list ul li,
+  .menu-list ul {
+    list-style: none;
+    margin: 10px 0;
+    /* text-decoration: none; */
+  }
+}
+
+.col{
+  flex: 1;
+  gap: 2rem;
+}
+
+.col img{
+  width: 100%;
+}
+
+.clients .col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.clients .col img { 
+  height: 3rem;
+  margin: 5px; /* Add some spacing between images */
+  flex: 1; /* Distribute available space equally among images */
+}
