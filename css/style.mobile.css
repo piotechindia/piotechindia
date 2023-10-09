@@ -1,6 +1,9 @@
 /* Responsive text sizes for different screen sizes */
 /* Small screens (e.g., mobile devices) */
 @media (max-width: 576px) {
+    footer .ft-col:nth-child(1) img{
+        width: 45%;
+      }
     
     .flex-row-m {
         display: flex;
@@ -40,6 +43,9 @@
   
   /* Medium screens (e.g., tablets) */
   @media (min-width: 577px) and (max-width: 992px) {
+    footer .ft-col:nth-child(1) img{
+        width: 45%;
+      }
 
     footer .ft-col {
 		margin-bottom: 5px;

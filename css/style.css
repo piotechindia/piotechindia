@@ -558,7 +558,7 @@ footer {
   &:nth-child(3){gap: .5rem;}
 }
 footer .ft-col:nth-child(1) img{
-  width: 45%;
+  width: 25%;
 }
 footer .ft-col:nth-child(3) img{
   width: 1.1rem;
