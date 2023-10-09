@@ -552,14 +552,81 @@ main section{
   width: 100%;
 }
 
-.clients .col {
+.clients{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 18rem;
+  gap: 2rem;
+  padding: 2rem 0;
+  margin: 7rem 0;
+  color: var(--white-secondary);
+  background-color: var(--text-black);
 }
 
-.clients .col img { 
-  height: 3rem;
-  margin: 5px; /* Add some spacing between images */
-  flex: 1; /* Distribute available space equally among images */
+
+.scroller {
+  font-size: 1rem;
+}
+
+.scroller__inner {
+  padding-block: .5rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+.tag-list {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  padding: .8rem 1rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: .1rem solid #ffffff7e;
+  box-shadow: 0 1rem 2rem -.5rem var(--text-black-secondary);
 }
