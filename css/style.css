@@ -18,7 +18,7 @@
   --white-secondary: #FAFBFC;
   --blue-primary: #3179FF;
   --blue-secondary: #2673DD;
-  --orange-primary: #FF2310;
+  --orange-primary: #fc4108;
   --text-black: #1F284F;
   --text-black-secondary: #17181A;
 
@@ -34,6 +34,11 @@
 
 /* Flexbox Utilities */
 .flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-row-m {
   display: flex;
   flex-direction: row;
 }
@@ -104,7 +109,7 @@
 }
 
 .text-lg {
-  font-size: 1.25rem;
+  font-size: 2rem;
   /* 20px / 16px = 1.25rem */
 }
 
@@ -142,7 +147,11 @@
 }
 
 .mtb-3{
-  margin: 3rem;
+  margin: 3rem 0;
+}
+
+.mtb-5{
+  margin: 5rem auto;
 }
 .ms-1 {
   margin: auto 1rem;
@@ -199,6 +208,19 @@
 
 .pl-3 {
   padding-left: 3rem;
+}
+
+/* gap classes */
+.g-1{
+  gap: 1rem;
+}
+
+.g-2{
+  gap: 2rem;
+}
+
+.g-3{
+  gap: 3rem;
 }
 
 /* Justify Content Classes */
@@ -266,6 +288,7 @@
 
 .button:hover{
   transform: scale(1.1);
+  background-color: var(--blue-secondary);
 }
 .button.disabled {
   pointer-events: none;
@@ -299,7 +322,7 @@ main {
 }
 
 main section{
-  margin: 4rem 1rem;
+  margin: 5rem 1rem;
 }
 
 
@@ -480,9 +503,64 @@ main section{
 }
 
 .tag-list li {
-  padding: .8rem 1rem;
+  padding: .75rem 1.5rem;
   align-items: center;
   border-radius: 0.5rem;
   border: .1rem solid #ffffff7e;
+  letter-spacing: .04rem;
   box-shadow: 0 1rem 2rem -.5rem var(--text-black-secondary);
 }
+
+
+
+.srv .button{
+  padding: .75rem 1rem;
+  background-color: var(--blue-secondary);
+}
+
+.icon-card{
+  border: .1rem solid var(--text-black);
+  border-radius: var(--radius-l);
+  max-width: 25%;
+  padding: 2rem;
+}
+
+.full-w-card{
+  color: var(--white-secondary);
+  background-color: var(--text-black);
+  padding: 5rem 2rem;
+  text-align: center;
+  justify-content: center;align-items: center;
+}
+
+.full-w-card .button{
+  background-color: var(--blue-primary);
+  padding: .75rem 1.5rem;
+  width: fit-content;
+}
+
+
+footer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: start;
+	margin: .5rem 0;
+  padding: 5rem 2rem;
+  gap: 2rem;
+}
+
+.ft-col {
+  display: flex;
+  flex-direction: column;
+	flex: 1;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+  &:nth-child(3){gap: .5rem;}
+}
+footer .ft-col:nth-child(1) img{
+  width: 45%;
+}
+footer .ft-col:nth-child(3) img{
+  width: 1.1rem;
+}
+
