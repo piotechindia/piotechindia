@@ -330,15 +330,19 @@ main section{
   position:sticky;  
   height: 4rem;
   top: 0;
+  z-index: 999;
   background-color: var(--white-secondary);
   border-bottom: .07rem solid #ddd;
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
   padding: 0 1rem;
 }
 
+
 .logo {
   font-weight: 600;
   font-size: var(--text-lg);
+  color: var(--text-black-secondary);
+  text-decoration: none;
 }
 
 .logo span {
@@ -355,8 +359,9 @@ main section{
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   /* Add a box shadow for styling */
   text-align: center;
-  width: 7rem;
-  padding: 0 2rem 1rem 2rem;
+  width: fit-content;
+  max-width: 15rem;
+  padding: 1rem 1.5rem;
   transition: all ease-in-out .4s;
   border-radius: var(--radius-m);
 }
@@ -364,7 +369,7 @@ main section{
 /* Show submenu on hover */
 .submenu:hover .submenu-content {
   display: block;
-  top: 2.3rem;
+  top: 2.6rem;
 }
 
 /* Style submenu items */
@@ -544,9 +549,12 @@ footer {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: start;
-	margin: .5rem 0;
-  padding: 5rem 2rem;
+	margin: 7rem 0 3rem;
+  padding: 2rem;
   gap: 2rem;
+  align-items: center;
+  border-top: .07rem solid #ddd;
+  border-bottom: .07rem solid #ddd;
 }
 
 .ft-col {
@@ -554,13 +562,113 @@ footer {
   flex-direction: column;
 	flex: 1;
 	&:first-child { margin-left: 0; }
-	&:last-child { margin-right: 0; }
-  &:nth-child(3){gap: .5rem;}
+	&:last-child { margin-right: 0;gap: .5rem; }
 }
-footer .ft-col:nth-child(1) img{
+footer .ft-col:first-child img{
   width: 25%;
 }
-footer .ft-col:nth-child(3) img{
+footer .ft-col:last-child img{
   width: 1.1rem;
 }
 
+.ab-card{
+  border: .2rem solid var(--text-black);
+  padding: 1rem;
+  border-radius: var(--radius-l);
+}
+
+
+.container {
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  width: fit-content  ;
+}
+
+.accordion{
+  border: .1rem solid var(--text-black);
+  padding: 1rem;
+  border-radius: var(--radius-l);
+}
+.accordion .accordion-item button[aria-expanded=true] {
+  border-bottom: 1px solid var(--blue-primary);
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: var(--text-black-secondary);
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover, .accordion button:focus {
+  cursor: pointer;
+  color:var(--text-black);
+}
+.accordion button:hover::after, .accordion button:focus::after {
+  cursor: pointer;
+  color: var(--blue-primary);
+  border: 1px solid var(--blue-primary);
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 1.5rem;
+  right: -.5rem;
+  background-color: var(--white-secondary);
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid;
+  border-radius: var(--radius-l);
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded=true] {
+  color: var(--blue-primary);
+}
+.accordion button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: 1.5rem 0;
+}

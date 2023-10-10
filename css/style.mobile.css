@@ -1,6 +1,11 @@
 /* Responsive text sizes for different screen sizes */
 /* Small screens (e.g., mobile devices) */
 @media (max-width: 576px) {
+
+  .conatainer{
+    width: 100%;
+    padding: 1rem;
+  }
     footer .ft-col:nth-child(1) img{
         width: 45%;
       }
@@ -43,6 +48,12 @@
   
   /* Medium screens (e.g., tablets) */
   @media (min-width: 577px) and (max-width: 992px) {
+
+
+  .conatainer{
+    width: 100%;
+    padding: 1rem;
+  }
     footer .ft-col:nth-child(1) img{
         width: 45%;
       }
