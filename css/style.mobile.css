@@ -1,176 +1,225 @@
 /* Responsive text sizes for different screen sizes */
 /* Small screens (e.g., mobile devices) */
 @media (max-width: 576px) {
+  .abouthero {
+    margin: 3rem 0;
+  }
 
-  .conatainer{
+  .abouthero .flex-1 {
+    width: 100%;
+  }
+
+  .abouthero div {
+    &:last-child {
+      border-left: none;
+    }
+  }
+
+  .aboutpage .numbers {
+    display: none;
+  }
+
+  .aboutpage .storyimage {
+    padding: 2rem;
+    max-width: 100%;
+    margin-right: 0;
+    border: none;
+    margin-bottom: 12rem;
+  }
+
+  .aboutpage .ourstory div:last-child{
+    margin: 2rem 4rem ;
+  }
+
+  .aboutpage .values{
+    margin: 30rem 0 7rem;
+  }
+
+  .aboutpage .values .card {
+    max-width: 100%;
+    margin: 0.5rem 1rem;
+
+  .conatainer {
     width: 100%;
     padding: 1rem;
   }
-    footer .ft-col:nth-child(1) img{
-        width: 45%;
-      }
-    
-    .flex-row-m {
-        display: flex;
-        flex-direction: column;
-      }
-    .text-xs {
-      font-size: 0.875rem;
-      /* 14px / 16px = 0.875rem */
-    }
-  
-    .flex-reverse-m {
-      display: flex;
-      flex-direction: row-reverse;
-      gap: 1rem;
-    }
-  
-    .submenu:hover .submenu-content {
-      display: none;
-    }
-  
-    .justify-endm-m{
-      justify-content: flex-start;
-    }
-    .icon-card{
-        max-width: 100%;
-    }
-    footer{
-        padding: 5rem 1rem;
-    }
-    footer .ft-col {
-		flex-basis: 100%;
-		margin: 0 0 5px 0;
-        display: flex;
-  flex-direction: column;
-	}
+
+  footer .ft-col:nth-child(1) img {
+    width: 45%;
+  }
+
+  .flex-row-m {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-xs {
+    font-size: 0.875rem;
+    /* 14px / 16px = 0.875rem */
+  }
+
+  .flex-reverse-m {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+  }
+
+  .submenu:hover .submenu-content {
+    display: none;
+  }
+
+  .justify-endm-m {
+    justify-content: flex-start;
+  }
+
+  .icon-card {
+    max-width: 100%;
+  }
+
+  footer {
+    padding: 5rem 1rem;
+  }
+
+  footer .ft-col {
+    flex-basis: 100%;
+    margin: 0 0 .4rem 0;
+    display: flex;
+    flex-direction: column;
   }
   
-  /* Medium screens (e.g., tablets) */
-  @media (min-width: 577px) and (max-width: 992px) {
+}
+
+/* Medium screens (e.g., tablets) */
+@media (min-width: 577px) and (max-width: 992px) {
 
 
-  .conatainer{
+  .conatainer {
     width: 100%;
     padding: 1rem;
   }
-    footer .ft-col:nth-child(1) img{
-        width: 45%;
-      }
 
-    footer .ft-col {
-		margin-bottom: 5px;
+  footer .ft-col:nth-child(1) img {
+    width: 45%;
+  }
+
+  footer .ft-col {
+    margin-bottom: 5px;
     flex-basis: 40%;
-		&:nth-last-child(2) {
-			margin-right: 0;
-		}
-		&:last-child {
-			flex-basis: 100%;
-			margin: 0;
-		}
-	}
 
-    footer{
-        padding: 5rem 1rem;
+    &:nth-last-child(2) {
+      margin-right: 0;
     }
 
-    .flex-row-m {
-        display: flex;
-        flex-direction: column;
-      }
-    .text-sm {
-      font-size: 1rem;
-      /* 16px / 16px = 1rem */
-    }
-  
-    .flex-reverse-m {
-      display: flex;
-      flex-direction: row-reverse;
-      gap: 1rem;
-    }
-  
-    .flex-reverse-col-m{
-      flex-direction: column-reverse;
-    }
-  
-    .submenu:hover .submenu-content {
-      display: none;
-    }
-    .icon-card{
-        max-width: 100%;
-    }
-  }
-  
-  /* Large screens (e.g., desktops) */
-  @media (min-width: 993px) and (max-width: 1200px) {
-    .text-md {
-      font-size: 1.125rem;
-      /* 18px / 16px = 1.125rem */
-    }
-  
-  }
-  
-  /* Extra-large screens */
-  @media (min-width: 1201px) {
-    .text-lg {
-      font-size: 1.25rem;
-      /* 20px / 16px = 1.25rem */
+    &:last-child {
+      flex-basis: 100%;
+      margin: 0;
     }
   }
 
-  /* Media query for smaller screens */
+  footer {
+    padding: 5rem 1rem;
+  }
+
+  .flex-row-m {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-sm {
+    font-size: 1rem;
+    /* 16px / 16px = 1rem */
+  }
+
+  .flex-reverse-m {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+  }
+
+  .flex-reverse-col-m {
+    flex-direction: column-reverse;
+  }
+
+  .submenu:hover .submenu-content {
+    display: none;
+  }
+
+  .icon-card {
+    max-width: 100%;
+  }
+}
+
+/* Large screens (e.g., desktops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .text-md {
+    font-size: 1.125rem;
+    /* 18px / 16px = 1.125rem */
+  }
+
+}
+
+/* Extra-large screens */
+@media (min-width: 1201px) {
+  .text-lg {
+    font-size: 1.25rem;
+    /* 20px / 16px = 1.25rem */
+  }
+}
+
+/* Media query for smaller screens */
 @media (max-width: 768px) {
 
-    .flex-row-m {
-        display: flex;
-        flex-direction: column;
-      }
+  .flex-row-m {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .flex-reverse-col-m{
-      flex-direction: column-reverse;
-    }
-  
-    .submenu:hover .submenu-content {
-      display: none;
-    }
-  
-    .menu-button {
-      display: block;
-    }
-  
-    .menu-list {
-      position: fixed;
-      top: 0;
-      left: -100%;
-      width: calc(80px + 3rem);
-      height: 100%;
-      background-color: var(--white-secondary);
-      z-index: 1000;
-      overflow-y: auto;
-      padding-top: 20px;
-      display: flex;
-      flex-direction: column;
-      transition: left 0.3s ease;
-    }
-  
-  .menu-button.clicked{
+  .flex-reverse-col-m {
+    flex-direction: column-reverse;
+  }
+
+  .submenu:hover .submenu-content {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .menu-list {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: calc(80px + 3rem);
+    height: 100%;
+    background-color: var(--white-secondary);
+    z-index: 1000;
+    overflow-y: auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: left 0.3s ease;
+  }
+
+  .menu-button.clicked {
     color: var(--orange-primary);
   }
-    .menu-button.clicked+.menu-list {
-      left: 0;
-      top: 0;
-    }
-  
-    /* Style for menu items */
-    .menu-list ul {
-      padding-left: 0;
-    }
-  
-    .menu-list ul li,
-    .menu-list ul {
-      list-style: none;
-      margin: 10px 0;
-      /* text-decoration: none; */
-    }
+
+  .menu-button.clicked+.menu-list {
+    left: 0;
+    top: 0;
   }
-  
+
+  /* Style for menu items */
+  .menu-list ul {
+    padding-left: 0;
+  }
+
+  .menu-list ul li,
+  .menu-list ul {
+    list-style: none;
+    margin: 10px 0;
+    /* text-decoration: none; */
+  }
+}
+}
