@@ -5,13 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Piotech INDIA</title>
-  <link rel="canonical" href="https://www.piotechindia.com"/>
+  <link rel="canonical" href="https://www.piotechindia.com" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style.mobile.css">
 </head>
 
 <body>
-  <main>
+  <div class="loading-container">
+    <div class="loading-spinner"></div>
+  </div>
+  <main class="content">
     <header id="navbar" class="flex-col justify-center ">
       <nav class="flex-row justify-center align-center justify-space-between">
         <a class="logo" href="index.html">Piotech <span>INDIA</span></a>
@@ -30,7 +33,7 @@
                 </ul>
               </li>
               <li><a href="#">Portfolio</a></li>
-              <li><a href="contactus.html">Contact</a></li>
+              <!-- <li><a href="contactus.html">Contact</a></li> -->
             </ul>
           </div>
           <a href="contactus.html" class="button">Get A Quote!</a>
@@ -67,7 +70,8 @@
       </div>
     </section>
     <section class="srv g-1 flex-col">
-      <p style="text-transform: uppercase;color: var(--blue-primary);font-weight: 500;" class="text-xs">fraction of a cost</p>
+      <p style="text-transform: uppercase;color: var(--blue-primary);font-weight: 500;" class="text-xs">fraction of a
+        cost</p>
       <a style="text-transform: capitalize;font-weight: 700;" class="text-lg">we provide awesome services</a>
       <div class="flex-wrap p-1 g-1">
         <a href="#" class="button">WordPress Development</a>
@@ -81,85 +85,118 @@
         <a href="#" class="button">Product Design</a>
         <a href="#" class="button">Design Systems</a>
       </div>
-      <a style="font-weight: 500;" class="text-md">Successfully delivered digital products and platforms for a diverse range of use cases across key industries.</a>
-      <a class="text-sm">Our highly experienced designers comprehend your vision and business objectives in order to create the designs.
-        Our agency specializes in assisting clients, particularly startups, in creating strong design systems that unify their brand both internally and externally.
-        We thoroughly enjoy collaborating with product-led companies, empowering their teams and customers with enhanced UI/UX and well-coordinated design kits.</a>
-        <div class="m-1 flex-wrap g-1">
-          <div class="flex-1 flex-col icon-card">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
-              <g clip-path="url(#clip0_13_519)">
-              <path d="M4.28582 39.3265L35.7144 39.3265C37.2923 39.3265 38.5715 38.0474 38.5715 36.4694L38.5715 5.04082C38.5715 3.46287 37.2923 2.18368 35.7144 2.18368L4.28582 2.18368C2.70786 2.18368 1.42867 3.46287 1.42867 5.04082L1.42867 36.4694C1.42867 38.0474 2.70786 39.3265 4.28582 39.3265Z" stroke="#45C491" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M8.57153 9.32654H14.2858" stroke="#45C491" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M8.57153 16.4694H21.4287" stroke="#45C491" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M32.8572 16.4694L24.2858 30.7551L14.2858 25.0408L8.57153 33.6122" stroke="#45C491" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </g>
-              <defs>
+      <a style="font-weight: 500;" class="text-md">Successfully delivered digital products and platforms for a diverse
+        range of use cases across key industries.</a>
+      <a class="text-sm">Our highly experienced designers comprehend your vision and business objectives in order to
+        create the designs.
+        Our agency specializes in assisting clients, particularly startups, in creating strong design systems that unify
+        their brand both internally and externally.
+        We thoroughly enjoy collaborating with product-led companies, empowering their teams and customers with enhanced
+        UI/UX and well-coordinated design kits.</a>
+      <div class="m-1 flex-wrap g-1">
+        <div class="flex-1 flex-col icon-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+            <g clip-path="url(#clip0_13_519)">
+              <path
+                d="M4.28582 39.3265L35.7144 39.3265C37.2923 39.3265 38.5715 38.0474 38.5715 36.4694L38.5715 5.04082C38.5715 3.46287 37.2923 2.18368 35.7144 2.18368L4.28582 2.18368C2.70786 2.18368 1.42867 3.46287 1.42867 5.04082L1.42867 36.4694C1.42867 38.0474 2.70786 39.3265 4.28582 39.3265Z"
+                stroke="#45C491" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M8.57153 9.32654H14.2858" stroke="#45C491" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M8.57153 16.4694H21.4287" stroke="#45C491" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M32.8572 16.4694L24.2858 30.7551L14.2858 25.0408L8.57153 33.6122" stroke="#45C491"
+                stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+            <defs>
               <clipPath id="clip0_13_519">
-              <rect width="40" height="40" fill="white" transform="translate(0 0.755066)"/>
+                <rect width="40" height="40" fill="white" transform="translate(0 0.755066)" />
               </clipPath>
-              </defs>
-              </svg>
-            <p class="text-md">CMS and e-commerce website, complex business websites & design solutions along with static web pages</p>
-          </div>
-          <div class="flex-1 flex-col icon-card">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
-              <g clip-path="url(#clip0_13_507)">
-                <path d="M38.5714 30.7551V36.4694C38.5714 37.2271 38.2704 37.9538 37.7346 38.4897C37.1988 39.0255 36.472 39.3265 35.7143 39.3265H30" stroke="#FF9752" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M30 2.18365H35.7143C36.472 2.18365 37.1988 2.48467 37.7346 3.02049C38.2704 3.55631 38.5714 4.28304 38.5714 5.0408V10.7551" stroke="#FF9752" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M1.42863 10.7551V5.0408C1.42863 4.28304 1.72965 3.55631 2.26547 3.02049C2.80129 2.48467 3.52802 2.18365 4.28578 2.18365H10.0001" stroke="#FF9752" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M10.0001 39.3265H4.28578C3.52802 39.3265 2.80129 39.0255 2.26547 38.4897C1.72965 37.9538 1.42863 37.2271 1.42863 36.4694V30.7551" stroke="#FF9752" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M20 19.3265C23.1559 19.3265 25.7143 16.7681 25.7143 13.6122C25.7143 10.4563 23.1559 7.89795 20 7.89795C16.8441 7.89795 14.2858 10.4563 14.2858 13.6122C14.2858 16.7681 16.8441 19.3265 20 19.3265Z" stroke="#FF9752" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M29.0287 30.7551C28.2162 29.0489 26.9368 27.6078 25.3389 26.5989C23.741 25.59 21.8899 25.0545 20.0001 25.0545C18.1103 25.0545 16.2592 25.59 14.6613 26.5989C13.0634 27.6078 11.784 29.0489 10.9715 30.7551" stroke="#FF9752" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_13_507">
-                  <rect width="40" height="40" fill="white" transform="translate(0 0.755066)"/>
-                </clipPath>
-              </defs>
-            </svg>
-            <p class="text-md">We are counted among most professional WordPress developer compnies in india
-            </p>
-          </div>
-          <div class="flex-1 flex-col icon-card">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
-              <g clip-path="url(#clip0_13_528)">
-                <path d="M7.85715 27.1837C11.4075 27.1837 14.2857 24.3055 14.2857 20.7551C14.2857 17.2047 11.4075 14.3265 7.85715 14.3265C4.30674 14.3265 1.42857 17.2047 1.42857 20.7551C1.42857 24.3055 4.30674 27.1837 7.85715 27.1837Z" stroke="#0070F0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M32.1429 39.3265C35.6933 39.3265 38.5714 36.4483 38.5714 32.8979C38.5714 29.3475 35.6933 26.4694 32.1429 26.4694C28.5925 26.4694 25.7143 29.3475 25.7143 32.8979C25.7143 36.4483 28.5925 39.3265 32.1429 39.3265Z" stroke="#0070F0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M32.1429 15.0408C35.6933 15.0408 38.5714 12.1626 38.5714 8.61223C38.5714 5.06182 35.6933 2.18365 32.1429 2.18365C28.5925 2.18365 25.7143 5.06182 25.7143 8.61223C25.7143 12.1626 28.5925 15.0408 32.1429 15.0408Z" stroke="#0070F0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M13.6 17.8979L26.4 11.4694" stroke="#0070F0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M13.6 23.6122L26.4 30.0408" stroke="#0070F0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_13_528">
-                  <rect width="40" height="40" fill="white" transform="translate(0 0.755066)"/>
-                </clipPath>
-              </defs>
-            </svg>
-            <p class="text-md">Increase conversions, leads, sales, revenue. That’s digital marketing services from Us
-            </p>
-          </div>
+            </defs>
+          </svg>
+          <p class="text-md">CMS and e-commerce website, complex business websites & design solutions along with static
+            web pages</p>
         </div>
+        <div class="flex-1 flex-col icon-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+            <g clip-path="url(#clip0_13_507)">
+              <path
+                d="M38.5714 30.7551V36.4694C38.5714 37.2271 38.2704 37.9538 37.7346 38.4897C37.1988 39.0255 36.472 39.3265 35.7143 39.3265H30"
+                stroke="#FF9752" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M30 2.18365H35.7143C36.472 2.18365 37.1988 2.48467 37.7346 3.02049C38.2704 3.55631 38.5714 4.28304 38.5714 5.0408V10.7551"
+                stroke="#FF9752" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M1.42863 10.7551V5.0408C1.42863 4.28304 1.72965 3.55631 2.26547 3.02049C2.80129 2.48467 3.52802 2.18365 4.28578 2.18365H10.0001"
+                stroke="#FF9752" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M10.0001 39.3265H4.28578C3.52802 39.3265 2.80129 39.0255 2.26547 38.4897C1.72965 37.9538 1.42863 37.2271 1.42863 36.4694V30.7551"
+                stroke="#FF9752" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M20 19.3265C23.1559 19.3265 25.7143 16.7681 25.7143 13.6122C25.7143 10.4563 23.1559 7.89795 20 7.89795C16.8441 7.89795 14.2858 10.4563 14.2858 13.6122C14.2858 16.7681 16.8441 19.3265 20 19.3265Z"
+                stroke="#FF9752" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M29.0287 30.7551C28.2162 29.0489 26.9368 27.6078 25.3389 26.5989C23.741 25.59 21.8899 25.0545 20.0001 25.0545C18.1103 25.0545 16.2592 25.59 14.6613 26.5989C13.0634 27.6078 11.784 29.0489 10.9715 30.7551"
+                stroke="#FF9752" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_13_507">
+                <rect width="40" height="40" fill="white" transform="translate(0 0.755066)" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p class="text-md">We are counted among most professional WordPress developer compnies in india
+          </p>
+        </div>
+        <div class="flex-1 flex-col icon-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+            <g clip-path="url(#clip0_13_528)">
+              <path
+                d="M7.85715 27.1837C11.4075 27.1837 14.2857 24.3055 14.2857 20.7551C14.2857 17.2047 11.4075 14.3265 7.85715 14.3265C4.30674 14.3265 1.42857 17.2047 1.42857 20.7551C1.42857 24.3055 4.30674 27.1837 7.85715 27.1837Z"
+                stroke="#0070F0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M32.1429 39.3265C35.6933 39.3265 38.5714 36.4483 38.5714 32.8979C38.5714 29.3475 35.6933 26.4694 32.1429 26.4694C28.5925 26.4694 25.7143 29.3475 25.7143 32.8979C25.7143 36.4483 28.5925 39.3265 32.1429 39.3265Z"
+                stroke="#0070F0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M32.1429 15.0408C35.6933 15.0408 38.5714 12.1626 38.5714 8.61223C38.5714 5.06182 35.6933 2.18365 32.1429 2.18365C28.5925 2.18365 25.7143 5.06182 25.7143 8.61223C25.7143 12.1626 28.5925 15.0408 32.1429 15.0408Z"
+                stroke="#0070F0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M13.6 17.8979L26.4 11.4694" stroke="#0070F0" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M13.6 23.6122L26.4 30.0408" stroke="#0070F0" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_13_528">
+                <rect width="40" height="40" fill="white" transform="translate(0 0.755066)" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p class="text-md">Increase conversions, leads, sales, revenue. That’s digital marketing services from Us
+          </p>
+        </div>
+      </div>
     </section>
     <section class="flex-row-m justify-center align-center flex-reverse-col-m ">
       <div class="col flex-row justify-center">
         <img src="images/discuss.svg" alt="">
       </div>
       <div class="col flex-col m-1">
-        <a class="text-xs" style="font-weight: 500;text-transform: uppercase;color: var(--blue-primary);">when brand meets your business goals</a>
+        <a class="text-xs" style="font-weight: 500;text-transform: uppercase;color: var(--blue-primary);">when brand
+          meets your business goals</a>
         <a style="font-size: 2.5rem;font-weight: 700;">BEST WEB BASED ONLINE <br> SOLUTIONS DEVELOPMENT
         </a>
-        <p>We will connect you within 24 working hours with a complete analysis of your requirements. Piotech INDIA support your belief and serve your marketing needs. Get a quick quote on your service request and let us be your partner when it comes to achieving success for your online venture.
+        <p>We will connect you within 24 working hours with a complete analysis of your requirements. Piotech INDIA
+          support your belief and serve your marketing needs. Get a quick quote on your service request and let us be
+          your partner when it comes to achieving success for your online venture.
           Schedule a Demo with our Friendly Experts.</p>
-          <a href="#" style="text-align: center;width:fit-content;padding: .75rem 1.5rem;" class="button">Get Started</a>
+        <a href="#" style="text-align: center;width:fit-content;padding: .75rem 1.5rem;" class="button">Get Started</a>
       </div>
     </section>
     <section>
-        <div class="full-w-card flex-col g-1">
-          <p class="text-lg">Let's Create an Amazing Project Togeter!</p>
-          <a href="#" class="button">Contact Now</a>
-          <p class="text-sm">We have over 3 years of experience in helping companies</p>
-        </div>
+      <div class="full-w-card flex-col g-1">
+        <p class="text-lg">Let's Create an Amazing Project Togeter!</p>
+        <a href="contactus.html" class="button">Contact Now</a>
+        <p class="text-sm">We have over 3 years of experience in helping companies</p>
+      </div>
     </section>
     <section>
       <!--
@@ -173,30 +210,89 @@
         <img src="images/products-of-piotechindia.svg" alt="products of piotech india">
       </div>
       <div class="ft-col">
-          <p style="font-weight: 600;" class="text-md">More Links</p>
-          <li class="menu-item">Pricing</li>
-          <li class="menu-item">About Us</li>
-          <li class="menu-item">Contact Us</li>
-          <li class="menu-item">Careers</li>
-          <li class="menu-item">Services</li>
+        <p style="font-weight: 600;" class="text-md">More Links</p>
+        <li class="menu-item"><a href="pricing.html">Pricing</a></li>
+        <li class="menu-item"><a href="about.html">About Us</a></li>
+        <li class="menu-item"><a href="policy.html">Privacy Policy</a></li>
+        <li class="menu-item">Careers</li>
+        <li class="menu-item">Services</li>
       </div>
       <div class="ft-col">
-          <a style="font-weight: 600;" class="text-md">Reach Us</a>
-          <li class="menu-item"><img src="images/envelope.png" alt="">Support - email</li>
-          <li class="menu-item"><img src="images/phone-call.png" alt="">+91 82396 10162</li>
-          <li class="menu-item"><img src="images/linkedin.png" alt="">piotechindia</li>
-          <li class="menu-item"><img src="images/map.png" alt="">Noida - Sector 17A, Greater Noida</li>
-          <li class="menu-item"><img src="images/map.png" alt="">Bhadra, Rajasthan (335502)</li>
+        <a style="font-weight: 600;" class="text-md">Reach Us</a>
+        <li class="menu-item"><svg width="1.2rem" height="1.2rem" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M19.7055 6.29452C18.2618 4.99044 15.8298 4.5 12 4.5C8.1702 4.5 5.73816 4.99044 4.29452 6.29452M19.7055 6.29452C21.0003 7.46413 21.5 9.28823 21.5 12C21.5 17.7353 19.2647 19.5 12 19.5C4.73529 19.5 2.5 17.7353 2.5 12C2.5 9.28823 2.99972 7.46413 4.29452 6.29452M19.7055 6.29452L13.4142 12.5858C12.6331 13.3668 11.3668 13.3668 10.5858 12.5858L4.29452 6.29452"
+                stroke="#3179FF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+          </svg>contact.piotechindia@gmail.com</li>
+        <li class="menu-item"><svg width="1.2rem" height="1.2rem" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path opacity="0.4"
+                d="M2.74982 18.65C2.33982 18.65 1.99982 18.31 1.99982 17.9V12.2C1.94982 9.49005 2.95982 6.93005 4.83982 5.01005C6.71982 3.10005 9.23982 2.05005 11.9498 2.05005C17.4898 2.05005 21.9998 6.56005 21.9998 12.1V17.8C21.9998 18.21 21.6598 18.55 21.2498 18.55C20.8398 18.55 20.4998 18.21 20.4998 17.8V12.1C20.4998 7.39005 16.6698 3.55005 11.9498 3.55005C9.63982 3.55005 7.49982 4.44005 5.90982 6.06005C4.30982 7.69005 3.45982 9.86005 3.49982 12.18V17.89C3.49982 18.31 3.16982 18.65 2.74982 18.65Z"
+                fill="#3179FF"></path>
+              <path
+                d="M5.94 12.45H5.81C3.71 12.45 2 14.16 2 16.26V18.14C2 20.24 3.71 21.95 5.81 21.95H5.94C8.04 21.95 9.75 20.24 9.75 18.14V16.26C9.75 14.16 8.04 12.45 5.94 12.45Z"
+                fill="#3179FF"></path>
+              <path
+                d="M18.19 12.45H18.06C15.96 12.45 14.25 14.16 14.25 16.26V18.14C14.25 20.24 15.96 21.95 18.06 21.95H18.19C20.29 21.95 22 20.24 22 18.14V16.26C22 14.16 20.29 12.45 18.19 12.45Z"
+                fill="#3179FF"></path>
+            </g>
+          </svg>+91 82396 10162</li>
+        <li class="menu-item"><svg width="1.2rem" height="1.2rem" viewBox="0 0 192 192"
+            xmlns="http://www.w3.org/2000/svg" fill="none">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <rect width="132" height="132" x="30" y="30" stroke="#3179FF" stroke-width="12" rx="16"></rect>
+              <path stroke="#3179FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M66 86v44">
+              </path>
+              <circle cx="66" cy="64" r="8" fill="#3179FF"></circle>
+              <path stroke="#3179FF" stroke-linecap="round" stroke-width="12"
+                d="M126 130v-26c0-9.941-8.059-18-18-18v0c-9.941 0-18 8.059-18 18v26"></path>
+            </g>
+          </svg>Linkedin</li>
+        <li class="menu-item"><svg width="1.2rem" height="1.2rem" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6 8.10747C6 4.73441 8.68629 2 12 2C15.3137 2 18 4.73441 18 8.10747C18 11.4541 16.085 15.3593 13.0972 16.7558C12.4007 17.0814 11.5993 17.0814 10.9028 16.7558C7.91499 15.3593 6 11.4541 6 8.10747ZM12 10C13.1046 10 14 9.10457 14 8C14 6.89543 13.1046 6 12 6C10.8954 6 10 6.89543 10 8C10 9.10457 10.8954 10 12 10Z"
+                fill="#3179FF"></path>
+              <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"
+                d="M3.62731 14.5343C3.88455 14.8589 3.82989 15.3306 3.50523 15.5879C2.93157 16.0424 2.75 16.443 2.75 16.75C2.75 16.993 2.86028 17.2881 3.19064 17.6296C3.52438 17.9747 4.04582 18.3252 4.75556 18.6471C6.00981 19.2159 7.74351 19.6466 9.75 19.8343V19.375C9.75 19.0807 9.9221 18.8137 10.1901 18.6921C10.4581 18.5705 10.7724 18.6168 10.9939 18.8106L12.4939 20.1231C12.6566 20.2655 12.75 20.4713 12.75 20.6875C12.75 20.9038 12.6566 21.1095 12.4939 21.252L10.9939 22.5645C10.7724 22.7582 10.4581 22.8046 10.1901 22.683C9.9221 22.5614 9.75 22.2943 9.75 22V21.3404C7.56512 21.1487 5.60927 20.6814 4.13599 20.0132C3.32214 19.644 2.62069 19.198 2.11244 18.6725C1.60081 18.1435 1.25 17.494 1.25 16.75C1.25 15.7998 1.81667 15.012 2.5737 14.4122C2.89836 14.1549 3.37008 14.2096 3.62731 14.5343ZM20.3727 14.5343C20.6299 14.2096 21.1016 14.1549 21.4263 14.4122C22.1833 15.012 22.75 15.7998 22.75 16.75C22.75 18.1281 21.5819 19.1606 20.2034 19.8514C18.7617 20.5738 16.791 21.0851 14.5756 21.3097C14.1635 21.3514 13.7956 21.0512 13.7538 20.6391C13.7121 20.227 14.0123 19.8591 14.4244 19.8173C16.522 19.6047 18.3014 19.1267 19.5314 18.5103C20.8246 17.8623 21.25 17.2067 21.25 16.75C21.25 16.443 21.0684 16.0424 20.4948 15.5879C20.1701 15.3306 20.1155 14.8589 20.3727 14.5343Z"
+                fill="#3179FF"></path>
+            </g>
+          </svg>Noida - Sector 17A, Greater Noida</li>
+        <li class="menu-item"><svg width="1.2rem" height="1.2rem" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6 8.10747C6 4.73441 8.68629 2 12 2C15.3137 2 18 4.73441 18 8.10747C18 11.4541 16.085 15.3593 13.0972 16.7558C12.4007 17.0814 11.5993 17.0814 10.9028 16.7558C7.91499 15.3593 6 11.4541 6 8.10747ZM12 10C13.1046 10 14 9.10457 14 8C14 6.89543 13.1046 6 12 6C10.8954 6 10 6.89543 10 8C10 9.10457 10.8954 10 12 10Z"
+                fill="#3179FF"></path>
+              <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"
+                d="M3.62731 14.5343C3.88455 14.8589 3.82989 15.3306 3.50523 15.5879C2.93157 16.0424 2.75 16.443 2.75 16.75C2.75 16.993 2.86028 17.2881 3.19064 17.6296C3.52438 17.9747 4.04582 18.3252 4.75556 18.6471C6.00981 19.2159 7.74351 19.6466 9.75 19.8343V19.375C9.75 19.0807 9.9221 18.8137 10.1901 18.6921C10.4581 18.5705 10.7724 18.6168 10.9939 18.8106L12.4939 20.1231C12.6566 20.2655 12.75 20.4713 12.75 20.6875C12.75 20.9038 12.6566 21.1095 12.4939 21.252L10.9939 22.5645C10.7724 22.7582 10.4581 22.8046 10.1901 22.683C9.9221 22.5614 9.75 22.2943 9.75 22V21.3404C7.56512 21.1487 5.60927 20.6814 4.13599 20.0132C3.32214 19.644 2.62069 19.198 2.11244 18.6725C1.60081 18.1435 1.25 17.494 1.25 16.75C1.25 15.7998 1.81667 15.012 2.5737 14.4122C2.89836 14.1549 3.37008 14.2096 3.62731 14.5343ZM20.3727 14.5343C20.6299 14.2096 21.1016 14.1549 21.4263 14.4122C22.1833 15.012 22.75 15.7998 22.75 16.75C22.75 18.1281 21.5819 19.1606 20.2034 19.8514C18.7617 20.5738 16.791 21.0851 14.5756 21.3097C14.1635 21.3514 13.7956 21.0512 13.7538 20.6391C13.7121 20.227 14.0123 19.8591 14.4244 19.8173C16.522 19.6047 18.3014 19.1267 19.5314 18.5103C20.8246 17.8623 21.25 17.2067 21.25 16.75C21.25 16.443 21.0684 16.0424 20.4948 15.5879C20.1701 15.3306 20.1155 14.8589 20.3727 14.5343Z"
+                fill="#3179FF"></path>
+            </g>
+          </svg>Bhadra, Rajasthan (335502)</li>
       </div>
     </footer>
-    <div class="text-center text-xs">©2019 Piotech INDIA, Bhadra, Raj 335502 (INDIA). <br>All rights reserved.</div>
+    <div style="margin: 0 auto 2rem;" class="text-center text-xs">©2019 Piotech INDIA, Bhadra, Raj 335502 (INDIA).
+      <br>All rights reserved.
+    </div>
   </main>
-  <center>
-    <div class="loading-spinner"></div>
-  </center>
   <script src="js/script.js"></script>
 
-<!-- url bar modified with .html remove-->
+  <!-- url bar modified with .html remove-->
   <!-- <script type="text/javascript">
     items.forEach((item) => item.addEventListener("click", toggleAccordion));
 

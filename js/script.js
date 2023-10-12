@@ -46,3 +46,10 @@ function toggleAccordion() {
 }
 
 items.forEach((item) => item.addEventListener("click", toggleAccordion));
+
+
+window.addEventListener('load', function() {
+  // Page is fully loaded; hide the loading animation
+  document.querySelector('.loading-container').style.display = 'none';
+  document.querySelector('.content').style.display = 'block';
+});
