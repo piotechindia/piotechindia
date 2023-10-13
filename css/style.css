@@ -783,36 +783,3 @@ footer .ft-col:first-child img{
   }
 }
 
-.pricing-container {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px;
-}
-
-.plan {
-  border: 1px solid #ccc;
-  padding: 20px;
-  text-align: center;
-  width: 200px;
-}
-
-.plan h2 {
-  font-size: 20px;
-}
-
-.plan p {
-  font-size: 16px;
-  color: #888;
-}
-
-.plan ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-}
-
-.plan li {
-  margin-bottom: 5px;
-}
